@@ -10,8 +10,10 @@ function newNote(newNote,NoteArr){
 }
 
 function deleteNotes(id, noteArr) {
+    console.log('hi',noteArr)
     const newArray = noteArr.filter(val => id.toString() !== val.id);
-    console.log('na', newArray, id, noteArr);
+console.log('newarray',newArray)
+
     fs.writeFileSync(
         path.join(__dirname, './db/db.json'),
         JSON.stringify({ notes: newArray }, null, 2)

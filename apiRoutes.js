@@ -13,15 +13,16 @@ router.post('/notes', (req, res) => {
     console.log('what is new note', postedNote)
 
     let results = notes;
-
-    console.log('results', results)
-
+    console.log('results post', results)
     res.json(notes);
 })
 
 router.delete('/notes/:id', (req, res) => {
-    deleteNotes(req.params.id, notes);
-    res.json(notes);
+   deleteNotes(req.params.id, notes);
+    let results = notes;
+    console.log('results delete', results)
+    res.json(results);
+    
 })
 
 module.exports = router;
