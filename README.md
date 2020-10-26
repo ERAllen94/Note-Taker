@@ -2,4 +2,8 @@
 
 https://github.com/ERAllen94/Note-Taker
 
-https://erallen94.github.io/Note-Taker/
+https://erallen94.github.io/Note-Taker/git 
+
+
+
+![alt text](./notetaker.png)
