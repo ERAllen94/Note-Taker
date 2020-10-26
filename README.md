@@ -6,4 +6,4 @@ https://erallen94.github.io/Note-Taker/git
 
 
 
-![alt text](./notetaker.png)
+![alt text](./notetaker.PNG)
