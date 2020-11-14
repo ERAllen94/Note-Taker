@@ -1,10 +1,14 @@
 const router = require('express').Router();
 const { newNote, deleteNotes } =require('./addedNotes')
 const { notes } = require('./db/db.json')
+const fs = require("fs");
 
 router.get('/notes', (req, res) => {
-    let results = notes;
-    res.json(results);
+
+    fs.readFile('db/db.json', (err,data) =>{
+console.log('what is data', JSON.parse(data))
+        res.json(JSON.parse(data).notes)
+    })
 });
 
 router.post('/notes', (req, res) => {
