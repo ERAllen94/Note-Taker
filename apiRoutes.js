@@ -8,6 +8,7 @@ router.get('/notes', (req, res) => {
     fs.readFile('db/db.json', (err,data) =>{
 console.log('what is data', JSON.parse(data))
         res.json(JSON.parse(data).notes)
+        
     })
 });
 
